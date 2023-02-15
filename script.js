@@ -9,5 +9,7 @@ button.ontouchstart = function (event) {
  event.preventDefault();
 };
 
+  
+
 //onmousedown 
 //ontouchstart
