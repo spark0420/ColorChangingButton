@@ -1,15 +1,18 @@
-var button = document.querySelector('.button');
+// var button1 = document.querySelector('.btn');
+let btns = document.getElementsByClassName("btn");
 
-button.ontouchstart = function (event) {
- var red = 0;
- var blue = 255;
- var green = 0;
+for(let i = 0; i < btns.length; i++){
+    btns[i].addEventListener("click", function(){
+        let buttonStyle = getComputedStyle(this);
+        let buttonBgColor = buttonStyle["backgroundColor"];
 
- this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
- event.preventDefault();
+        if(buttonBgColor == "rgb(255, 0, 0)"){
+            this.style.backgroundColor = "rgb(0, 0, 255)";
+        }else{
+            this.style.backgroundColor = "rgb(255, 0, 0)";
+        }
+    })
 };
-
-  
 
 //onmousedown 
 //ontouchstart
