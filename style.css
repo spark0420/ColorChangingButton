@@ -7,10 +7,10 @@
 }
 
 .btn {
-
+    margin-top: 10%;
     margin-right: 30px;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 5px;
     background-color: red;
     font-size: 30px;
