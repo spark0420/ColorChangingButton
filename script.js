@@ -1,6 +1,6 @@
 var button = document.querySelector('.button');
 
-button.onmousedown = function (event) {
+button.ontouchstart = function (event) {
  var red = 0;
  var blue = 255;
  var green = 0;
@@ -9,5 +9,5 @@ button.onmousedown = function (event) {
  event.preventDefault();
 };
 
-//mousedown 
-//touchstart
+//onmousedown 
+//ontouchstart
